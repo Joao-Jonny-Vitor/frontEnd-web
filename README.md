@@ -17,3 +17,14 @@ git config --global user.email <email do usuario>
 # mostra todas as configurações do git
 git config --list
 ```
+
+``` 
+# Comandos para commitar
+git add .
+git commit -m "<mensagem do commit>"
+``` 
+
+```
+# Comando para publicar os commits
+git push
+```
