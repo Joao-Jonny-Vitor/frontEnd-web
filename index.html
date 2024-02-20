@@ -1,12 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <tittle> Primeira Pagina Web</tittle>
+
+        <!-- CSS externo-->
+        <!-- Conectar o arquivo CSS com o index-->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- CSS interno -->
+        <style>
+            h1{
+                color: #742275
+            }
+
+            div {
+                width: 100%;
+                display: flex;
+                height: 50px;
+                background: #1690e2;
+            
+                justify-content: space-around;
+            }
+
+            /* Se refere ao ID posto no elemento div */
+            #logo {
+                width: 400px;
+                height: 50px;
+                background: #e2d516;
+            }
+            #menu{
+                width: 400px;
+                height: 50px;
+                background: #2dbd10;
+                
+            }
+        </style>
     </head>
 
     <body>
-        <h1> Olá Mundo HTML</h1>
-        <h1> Hello world! </h1>
+        <!-- Este é o comando para comentar o codigo-->
+        <div>
+            <div id="logo">
+
+            </div>         
+            <div id="menu">
+            
+            </div>
+        </div>
+        
+        <!-- Tags de titulo-->
+        <h1 style="color: #2f8dc0;"> Olá Mundo HTML!</h1>
+        <h1> Olá Mundo HTML!</h1>
+        <h2> Hello world! </h2>
+        <h3> Hello world! </h3>
+        <h4> Hello world! </h4>
+        <h5> Hello world! </h5>
+        <h6> Hello world! </h6>
+
+        <!-- Paragrafo-->
+        <p>As bananas formam-se em cachos na parte superior dos <strong>"pseudocaules"</strong> nascem de um verdadeiro caule subterrâneo (rizoma ou cormo) cuja longevidade chega a 15 anos ou mais. Depois da maturação e colheita do cacho de bananas, o pseudocaule morre (ou é cortado), dando origem, posteriormente, a um novo pseudocaule</p>
+        <p>As pseudobagas formam-se em <span>"pencas"</span> com até cerca de vinte bananas. Os cachos de bananas</p>
+        <p>Ainda que as espécies <b>selvagens</b> apresentem numerosas <i>sementes</i>, grandes e duras, quase todas as variedades de banana utilizadas na alimentação humana <mark>não têm sementes</mark></p>
     </body>
 
 </html>
