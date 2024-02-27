@@ -3,4 +3,28 @@ h1{
 }
 h2{
     color:rgb(212, 209, 19)
-}\
+}
+
+div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background: #1690e2;
+    justify-content: space-around;
+    align-items: center
+}
+
+/* Se refere ao ID posto no elemento div */
+/* para se referir ao id se usa #, ja para a classe se usa . */
+.logo {
+    width: 400px;
+    height: 50px;
+    background: #e9da06;
+}
+#menu{
+    width: 400px;
+    height: 50px;
+    background: #2dbd10;
+    
+}

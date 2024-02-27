@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<header>
+    <title>Layout 2</title>
+
+    <style>
+        #big {
+            display: flex;
+            width: 100%;
+            height: 925px;
+        }
+
+        #sidebar {
+            background-color: #132968;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            width: 20%;
+            height: 100%;
+        }
+
+        #topbar{
+            background-color: #0869b8;
+            width: 100px;
+            height: 100px;
+            margin: 25px 0px 0px 0px;
+        }
+
+        #botbar{
+            background-color:  #0869b8;
+            width: 100px;
+            height: 100px;
+            margin: 0px 0px 25px 0px;
+        }
+
+        #main {
+            background-color: aqua;
+            width: 80%;
+            height: 100%;
+        }
+
+        #header {
+            width: 100%;
+            height: 15%;
+            display: flex;
+            background: #082985;
+            justify-content: end;
+            align-items: center;   
+        }
+        #box1{
+            width: 50px;
+            height: 50px;
+            background: #5574c9;
+        }
+        #box2{
+            width: 50px;
+            height: 50px;
+            background: #5574c9;
+            margin: 0px 20px 0px 20px;
+        }
+
+        #center {
+            width: 100%;
+            height: 70%;
+            background: #012da7d5;
+            display: flex;
+            justify-content:space-evenly;
+            flex-direction:column;
+            
+        }
+
+        #title{
+            width: 50%;
+            height: 10%;
+            background:#2277c7d5;
+            margin: 0px 10% 0px 5%;
+            
+        }
+        #content{
+            width: 70%;
+            height: 70%;
+            background: #5ea1e0d5;
+            margin: 0px 0px 0px 5%;
+        }
+
+        #footer{
+            width: 100%;
+            height: 15%;
+            background: #082985;
+        }
+    </style>
+</header>
+
+<body>
+    <div id="big">
+        <div id="sidebar">
+            <div id="topbar"></div>
+            <div id="botbar"></div>
+        </div>
+
+        <div id="main">
+            <div id="header">
+                <div id=box1></div>
+                <div id="box2"></div>
+            </div>
+
+            <div id="center">
+                <div id="title"></div>
+                <div id="content"></div>
+            </div>
+
+            <div id="footer"></div>
+        </div>
+    </div>
+</body>
+
+
+</html>
