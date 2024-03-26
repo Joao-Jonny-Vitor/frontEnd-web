@@ -6,6 +6,11 @@
     <title> IF Finance</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+<style>
+    main{
+        flex-direction: column;
+    }
+</style>
 <body>
     <header>
         <div class="logotipo">
@@ -22,7 +27,43 @@
         </nav>
     </header>
     <main>
-        
+        <h1>Cadastre-se</h1>
+        <form action="exemplo-form.php" method="post">
+            <fieldset>
+                <legend>Dados pessoal</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="pass">pass</label>
+                <input type="password" name="pass" id="pass">
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+                <label for="rua">Rua:</label>
+                <input type="text" name="rua" id="rua">
+                <label for="cidade">Cidade:</label>
+                <select name="cidade">
+                    <option value="caragua">Caraguatatuba</option>
+                    <option value="São josé dos campos">São josé</option>
+                    <option value="São sebastião">São seba</option>
+                </select>
+                <h4>Com que frequencia visita o litoral:</h4>
+                <div><input type="radio" name="frequencia" id="muito-pouco" value="Muito pouco"><label for="muito-pouco">Muito pouco</label></div>
+                <div><input type="radio" name="frequencia" id="pouco" value="pouco"><label for="pouco">Pouco</label></div>
+                <div><input type="radio" name="frequencia" id="eventualmente" value="eventualmente"><label for="eventualmente">Eventualmente</label></div>
+                <div><input type="radio" name="frequencia" id="muito" value="muito"><label for="muito">Muito</label></div>
+            </fieldset>
+            <input type="checkbox" name="termos" id="termos" value="Sim"><label for="termos">Aceita os termos de uso do site?</label><br>
+            <input type="checkbox" name="newsletter" id="newsletter" value="Sim"><label for="newsletter">Gostaria de receber novidades sobre o site?</label><br>
+            <label for="comentario">Deixe um comentario</label><br>
+            <textarea name="comentario" id="comentario" rows="8" cols="50"></textarea><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar"><span>(Não usarS)</span>
+        </form>
     </main>
     
     <footer>

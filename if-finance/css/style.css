@@ -4,11 +4,12 @@ html, body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #141414;
     color: #fff;
+    font-size: 1.1rem;
 }
 
 body > header{
     height: 70px;
-    background: #001102;
+    background: #000501;
     padding: 0 16px;
     display: flex;
     align-items: center;
@@ -54,7 +55,7 @@ nav ul{
 }
 
 body > main{
-    background: #071f0c;
+    background: #041307;
     min-height: calc(100vh - 302px);
     padding: 16px;
     display: flex;
@@ -63,7 +64,7 @@ body > main{
 }
 
 body > footer{
-    background: #001102;
+    background: #000501;
     height: 200px;
     display: flex;
     justify-content: center;
@@ -153,4 +154,52 @@ tr:nth-child(even){
 }
 tr:nth-child(odd){
     background: #032403;
+}
+
+fieldset{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 0 0 30px 0;
+}
+legend{
+    font-size: 20px;
+    padding: 0 10px 5px 10px;
+}
+input[type=text], input[type=email], input[type=password], select{
+    padding: 5px 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 3px 0 16px 0;
+    border: none;
+    background: #072907;
+    color: #fff;
+}
+
+input[type=submit], input[type=reset]{
+    border: 1px solid #174917;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: #174917;
+    font-size: 1.1rem;
+    margin: 16px 16px 16px 0;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover{
+    background-color: #016901;
+}
+
+input[type=submit]:active, input[type=reset]:active{
+    background-color: #003500;
+}
+textarea{
+    background: #072907;
+    border: none;
+    font-size: 1.2rem;
+    color:#fff;
+    border-radius: 15px;
 }
