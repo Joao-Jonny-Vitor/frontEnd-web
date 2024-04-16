@@ -199,14 +199,46 @@ input[type=submit]:active, input[type=reset]:active{
 textarea{
     background: #072907;
     border: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color:#fff;
     border-radius: 15px;
+    width: 460px;
 }
 
 #banner{
     width: 500px;
     height: 300px;
-    /* background: #2e2e2e url() right bottom no-repeat 200px 200px; */
-    background: #222222;
+    background: #2e2e2e url("/if-finance/img/images.jpg");
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+nav div{
+    display: none;
+}
+
+@media screen and (width <= 644px){
+    nav ul{
+        display: none;
+    }
+
+    nav div{
+        display: flex;
+    }
+
+    body > main{
+        justify-content: center;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 400){
+    .card-ticker{
+        width: 100%;
+    }
 }
