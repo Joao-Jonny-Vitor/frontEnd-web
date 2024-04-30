@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial0scale=1.0">
     <title> IF Finance</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="js/main.js"></script>
     <style>
         body > main{
             flex-direction: column;
         }
     </style>
 </head>
-<body>
+<body onload="loadTable()">
     <header>
         <div class="logotipo">
             <img src="./img/logo-if-finance.svg" alt="!Logo IF Finance">
@@ -29,7 +30,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main >
         <h1> Tabela de Ações em Destaque</h1>
         <table>
             <tr>
@@ -37,7 +38,7 @@
             </tr>
             <tr>
                 <th>Bolsa</th>
-                <th>Ticker</th>
+                <th>Codigo</th>
                 <th>Empresa</th>
                 <th>Setor</th>
                 <th>Site</th>
@@ -101,7 +102,22 @@
             </tr>
 
         </table>
+        <table id="att">
+            <tr>
+                <th colspan="7" style="text-align: center;">Suas Ações</th>
+            </tr>
+            <tr>
+                <th>Bolsa</th>
+                <th>Codigo</th>
+                <th>Empresa</th>
+                <th>Valor</th>
+                <th>Variação</th>
+                <th>Nº ações</th>
+                <th>Posição</th>
+            </tr>
+        </table>
     </main>
+    
     <footer>
         <p>Copyright 2024 © João Vitor de Paula Oliveira ("Jonny")</p>
     </footer>
