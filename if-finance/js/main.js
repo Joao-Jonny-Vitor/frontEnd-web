@@ -27,27 +27,28 @@ const allStocks =[{
 ]
 
 
-function addCard(stock){
+function addCard({bolsa, ticker, company, valor, variacao, nActions}){
     const main = document.querySelector(`body > main`)
+
     main.innerHTML = main.innerHTML + `
     <div class="card-ticker">
     <header>
-        <h2><span>${stock.bolsa}:</span> ${stock.ticker}</h2>
-        <h1>${stock.company}</h1>
+        <h2><span>${bolsa}:</span> ${ticker}</h2>
+        <h1>${company}</h1>
     </header>
     <main>
-        <p>R$ ${realFormat(stock.valor / 100)}</p>
-        <span ${ stock.variacao < 0 ? 'style="background: #FF0000;"' : ''} >${ stock.variacao < 0 ? '▼' : '▲'} ${stock.variacao}%</span>
-        <span>R$ ${realFormat(((+stock.valor / 100)*(stock.variacao / 100)))}</span>
+        <p>R$ ${realFormat(valor / 100)}</p>
+        <span ${ variacao < 0 ? 'style="background: #FF0000;"' : ''} >${ variacao < 0 ? '▼' : '▲'} ${variacao}%</span>
+        <span>R$ ${realFormat(((+valor / 100)*(variacao / 100)))}</span>
     </main>
     <footer>
         <div>
-            <p>${stock.nActions}</p>
+            <p>${nActions}</p>
             <span>Ações</span>
         </div>
         <div>
             <div>
-                <p>R$ ${realFormat(stock.nActions * (+stock.valor / 100))}</p>
+                <p>R$ ${realFormat(nActions * (+valor / 100))}</p>
                 <span>Posição</span>
             </div>
         </div>
@@ -84,4 +85,41 @@ function addTable(stock){
 
 function loadTable(){
     allStocks.map(stock => addTable(stock))
+}
+
+const openModal = () => {
+    const modal = document.getElementById("add-card-modal")
+    modal.style.display = "flex"
+}
+
+const closeModal = (event, id) => {
+
+    const modal = document.getElementById("add-card-modal")
+
+    if(event?.target?.id === 'add-card-modal' || id === 'add-card-modal'){
+        modal.style.display = "none"
+    }
+    
+}
+
+const createCard = (event) =>{
+        event.preventDefault()
+
+        // const {bolsa, ticker, company, valor, variacao, nActions} = event.target.elements
+        // // addCard({
+        // //     bolsa: bolsa.value,
+        // //     ticker: ticker.value,
+        // //     company: company.value,
+        // //     valor: valor.value,
+        // //     variacao: variacao.value,
+        // //     nActions: nActions.value
+        // // })
+
+        const formData = new FormData(event.target)
+        const stock = Object.fromEntries(formData)
+        addCard(stock)
+
+        event.target.reset()
+
+        closeModal(null, 'add-card-modal')
 }

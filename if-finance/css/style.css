@@ -52,6 +52,7 @@ nav ul{
     gap: 16px;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
 body > main{
@@ -239,4 +240,43 @@ nav div{
     .card-ticker{
         width: 100%;
     }
+}
+
+button{
+    background: #0b530b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#add-card-modal{
+    position: absolute;
+    background: #000000b3;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#add-card-modal main{
+    width: 300px;
+    
+    background: #6bac67;
+    border-radius: 15px;
+    padding: 20px;
+    color: #000501;
+}
+
+#add-card-modal h2{
+    margin: 0;
+}
+#add-card-modal form{
+    display: flex;
+    margin: 20px 0px;
+    flex-direction: column;
 }

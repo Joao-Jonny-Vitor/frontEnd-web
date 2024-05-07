@@ -60,3 +60,15 @@ const soma =(valor1, valor2) => {
     return valor1 + valor2
 }
 
+const stock= {
+    bolsa: "NASDAQ",
+    ticker: "AAPL",
+    company: "Apple Inc",
+    valor: 25080,
+    variacao: 0.35,
+    nActions: 40,
+}
+//Desestruturação
+const {bolsa, ticker, company, valor, variacao, nActions} = stock
+
+const{bolsa, ticker: codigo, empresa} = stock
