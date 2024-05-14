@@ -251,32 +251,36 @@ button{
     cursor: pointer;
 }
 
-#add-card-modal{
-    position: absolute;
-    background: #000000b3;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
+.modal {
+	position: absolute;
+	background: #000000e1;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
 }
 
-#add-card-modal main{
-    width: 300px;
-    
-    background: #6bac67;
-    border-radius: 15px;
-    padding: 20px;
-    color: #000501;
+.modal main{
+	width: 300px;
+	background: #141414;
+	border-radius: 15px;
+	padding: 20px;
+	color: #ffffff;
 }
 
-#add-card-modal h2{
-    margin: 0;
+.modal main h2{
+	margin: 0;
 }
-#add-card-modal form{
-    display: flex;
-    margin: 20px 0px;
-    flex-direction: column;
+
+.modal main form{
+	margin: 20px 0 0 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.modal main form button{
+	margin: 20px 0 0 0;
 }
