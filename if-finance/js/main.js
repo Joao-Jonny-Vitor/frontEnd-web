@@ -1,5 +1,5 @@
 //adicionar o token do finnhub stock APIs
-const token = 'cp1bhl1r01qu1k1i3j4gcp1bhl1r01qu1k1i3j50'
+const token = ''
 
 const allStocks =[{
     bolsa: "NASDAQ",
